@@ -1,3 +1,5 @@
+//Array of robots with properties id, name, username, and email. It is exported not with default, so if we want to use it 
+// in another js file, we have to import it as : import {robots} from './Robots.js'
 export const robots = [
     {
       id: 1,
