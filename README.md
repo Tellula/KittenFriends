@@ -7,9 +7,5 @@ It's a list of "Robots" That gets refreshed everytime we type something in the s
 Still a WIP.
 
 
-TODO :
 
-- Missing Background
-- Title style
-- Will probably update the name with cats, since these are not robots but cats :)
 
