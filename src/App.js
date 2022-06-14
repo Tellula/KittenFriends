@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Cardlist from "./Cardlist";
 import SearchBox from "./SearchBox";
+import Scroll from "./Scroll";
 import './App.css';
 
 class App extends Component { //Smart component, it has the state inside it
