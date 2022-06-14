@@ -6,7 +6,7 @@ const SearchBox = ({searchfield, searchChange}) => {
       <input
         className="pa 3 ba b--pink bg lightest-green"
         type="search"
-        placeholder="search robots"
+        placeholder="search kittens"
         onChange={searchChange}// tells the parent to run the searchChange function, each time the input is mofified by the user
       />
     </div>

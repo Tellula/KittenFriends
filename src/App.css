@@ -1,0 +1,14 @@
+
+    @font-face {
+        font-family: 'Kitten Paw Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Kitten Paw Regular'), url('Kitten Paw DEMO.woff') format('woff');
+        }
+
+h1 {
+    font-family: 'Kitten Paw Regular';
+    font-weight: 900;
+    color: bisque;
+
+}
