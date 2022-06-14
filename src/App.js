@@ -37,7 +37,9 @@ class App extends Component { //Smart component, it has the state inside it
         <div className="tc">
           <h1 className="f1">Kitten friends</h1>
           <SearchBox searchChange={this.onSearchChange} />
+          <Scroll>
           <Cardlist robots={filteredRobots} />
+          </Scroll>
         </div>
       );
     }

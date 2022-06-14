@@ -12,3 +12,8 @@ h1 {
     color: bisque;
 
 }
+
+.search {
+    height: 3em;
+    color: rgba(255, 255, 255, 0.219);
+}
