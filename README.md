@@ -7,5 +7,5 @@ It's a list of "Robots" That gets refreshed everytime we type something in the s
 Still a WIP.
 
 
-
+![kittens](public/kittens.png)
 
