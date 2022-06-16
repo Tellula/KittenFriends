@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.12a52dd0.css",
-    "main.js": "/static/js/main.51d3bea2.js",
-    "static/js/787.32032a02.chunk.js": "/static/js/787.32032a02.chunk.js",
-    "static/media/Kitten Paw DEMO.woff": "/static/media/Kitten Paw DEMO.4b2572012c1072d40fd8.woff",
-    "index.html": "/index.html",
-    "main.12a52dd0.css.map": "/static/css/main.12a52dd0.css.map",
-    "main.51d3bea2.js.map": "/static/js/main.51d3bea2.js.map",
-    "787.32032a02.chunk.js.map": "/static/js/787.32032a02.chunk.js.map"
+    "main.css": "/KittenFriends/static/css/main.fd0fbaa1.css",
+    "main.js": "/KittenFriends/static/js/main.41770e0b.js",
+    "static/js/787.32032a02.chunk.js": "/KittenFriends/static/js/787.32032a02.chunk.js",
+    "static/media/Kitten Paw DEMO.woff": "/KittenFriends/static/media/Kitten Paw DEMO.4b2572012c1072d40fd8.woff",
+    "index.html": "/KittenFriends/index.html",
+    "main.fd0fbaa1.css.map": "/KittenFriends/static/css/main.fd0fbaa1.css.map",
+    "main.41770e0b.js.map": "/KittenFriends/static/js/main.41770e0b.js.map",
+    "787.32032a02.chunk.js.map": "/KittenFriends/static/js/787.32032a02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12a52dd0.css",
-    "static/js/main.51d3bea2.js"
+    "static/css/main.fd0fbaa1.css",
+    "static/js/main.41770e0b.js"
   ]
 }
