@@ -1,5 +1,6 @@
 {
   "name": "robofriends",
+  "homepage": "https://tellula.github.io/KittenFriends",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
