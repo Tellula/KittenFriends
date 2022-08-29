@@ -4,9 +4,9 @@ import Card from "./Card";
 //Creates a function to generate a card for each Robot
 const Cardlist = ({ robots }) => {
   //use of the prop robots sent by App.j. Always in {}
-if (true) {
-    throw new Error('NOOOOOOOOOOOOOOOOOOOOOOOOOOOO !')
-}
+// if (false) {
+//     throw new Error('NOOOOOOOOOOOOOOOOOOOOOOOOOOOO !')
+// }
   return (
     <div>
       {robots.map((user, index) => {
