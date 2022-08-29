@@ -6,7 +6,7 @@ It's a list of kittens that gets refreshed everytime we type something in the se
 
 
 Update 08.29.22 :
-adding React Hooks to the project, WIP
+adding React Hooks to the project
 
 
 
