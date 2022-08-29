@@ -1,52 +1,45 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Cardlist from "../Components/Cardlist";
 import SearchBox from "../Components/SearchBox";
 import Scroll from "../Components/Scroll";
 import ErrorBoundary from "../Components/ErrorBoundary";
-
 import "./App.css";
 
-class App extends Component {
-  //Smart component, it has the state inside it
-  constructor() {
-    super(); // Enables the use of state properties. If not super(), error Cannot set properties of undefined (setting 'state')
-    this.state = {
-      robots: [],
-      searchfield: "",
-    };
-  }
+function App() {
+  const [robots, setRobots] = useState([]);
+  const [searchfield, setSearchfield] = useState("");
+  const [count, setCount] = useState(0);
 
-  componentDidMount() {
-    // triggers when the state is updated
+  useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users") // grab the list from a placeholder api
       .then((response) => response.json())
-      .then((users) => this.setState({ robots: users })); // assign the fetched list to the state
-  }
+      .then((users) => setRobots(users)); // assign the fetched list to the state with useState hooks
+      console.log(count)
+  }, [count]);
 
-  onSearchChange = (event) => {
-    this.setState({ searchfield: event.target.value }); //Modifies the state to update when input is onchange(). Defined in SearchBox.js
+  const onSearchChange = (event) => {
+    setSearchfield(event.target.value); //Modifies the state to update with user input
   };
 
-  render() {
-    const { robots, searchfield } = this.state; //enables the use of robots and searchfield after, so we do not repeat ourselves
-    const filteredRobots = robots.filter((robot) => {
-      return robot.name.toLowerCase().includes(searchfield.toLowerCase());
-    });
-    // if the list is not loaded for x reason, renders a loading title
-    return !robots.length ? ( // replace the robots.length === 0 robots.length means false so !robots.length means true
-      <h1>Loading</h1>
-    ) : (
-      <div className="tc">
-        <h1 className="f1">Kitten friends</h1>
-        <SearchBox searchChange={this.onSearchChange} />
-        <Scroll>
+  const filteredRobots = robots.filter((robot) => {
+    return robot.name.toLowerCase().includes(searchfield.toLowerCase());
+  });
+
+  // if the list is not loaded for x reason, renders a loading title
+  return !robots.length ? ( // replace the robots.length === 0 robots.length means false so !robots.length means true
+    <h1>Loading</h1>
+  ) : (
+    <div className="tc">
+      <h1 className="f1">Kitten friends</h1>
+      <button onClick={() => setCount(count + 1)}>Click me !</button>
+      <SearchBox searchChange={onSearchChange} />
+      <Scroll>
         <ErrorBoundary>
           <Cardlist robots={filteredRobots} />
         </ErrorBoundary>
-        </Scroll>
-      </div>
-    );
-  }
+      </Scroll>
+    </div>
+  );
 }
 
 export default App;
